@@ -7,8 +7,24 @@
 	"name": "data-service",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-06-17",
-	"compatibility_flags": ["nodejs_compat"],
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
 	"observability": {
 		"enabled": true,
 	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_id": "b298314d-1048-408d-ae71-bfa7d16041bb",
+			"experimental_remote": true
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "CACHE",
+			"id": "3a65117463b841ab9f4db1e8651766f3",
+			"experimental_remote": true
+		}
+	]
 }
