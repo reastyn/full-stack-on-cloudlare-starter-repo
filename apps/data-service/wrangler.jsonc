@@ -12,6 +12,7 @@
 	],
 	"observability": {
 		"enabled": true,
+		"head_sampling_rate": 1
 	},
 	"d1_databases": [
 		{
@@ -47,5 +48,18 @@
 			"name": "destination-evaluation-workflow",
 			"class_name": "DestinationEvaluationWorkflow"
 		}
-	]
+	],
+	"browser": {
+		"binding": "VIRTUAL_BROWSER"
+	},
+	"r2_buckets": [
+		{
+			"binding": "BUCKET",
+			"bucket_name": "smart-links-eval-stage"
+		}
+	],
+	"upload_source_maps": true,
+	"ai": {
+		"binding": "AI",
+	},
 }
